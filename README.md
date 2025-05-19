@@ -30,34 +30,40 @@ Ensure you have the following installed and ready:
 
 ## 🚀 Setup Instructions
 1. Clone the Repository
+```console
 git clone https://github.com/0smanGoni/AKIJ-AIR-Outbound-Caller-Voice-Agent.git
 cd akij-air-outbound-caller-agent
-
+```
 2. Create a Virtual Environment
 Set up a virtual environment to manage dependencies.
 Linux/macOS
+```console
 python3 -m venv venv
 source venv/bin/activate
-
+```
 Windows
+```console
 python3 -m venv venv
 venv\Scripts\activate.bat
-
+```
 3. Install Dependencies
 Install the required Python packages:
+```console
 pip install -r requirements.txt
-
+```
 4. Download Required Files
 Download necessary data files (e.g., JSON files for memory):
+```console
 python agent.py download-files
-
+```
 
 ## 🔑 Configuration
 Configure the environment by setting up API keys and SIP trunk details.
 1. Create the .env File
 Copy .env.example (if provided) to .env:
+```console
 cp .env.example .env
-
+```
 2. Edit the .env File
 Add your API keys, URLs, and SIP trunk ID:
 # API Keys
@@ -83,13 +89,15 @@ Add your API keys, URLs, and SIP trunk ID:
 
 3. Optional: Use LiveKit CLI
 Configure the environment using:
+```console
 lk app env
-
+```
 
 ## 🏃 Running the Agent
 Start the agent in development mode:
+```console
 python agent.py dev
-
+```
 The agent will run as a worker, waiting for dispatch commands to initiate outbound calls.
 
 ### 📞 Setting Up Outbound Calls with Twilio
@@ -126,6 +134,8 @@ Prepare the Trunk Configuration:
 - Do not commit outbound-trunk.json to a public repository.
 
 Example outbound-trunk.json:
+```console
+
 {
   "trunk": {
     "name": "AKIJ AIR Outbound",
@@ -135,11 +145,12 @@ Example outbound-trunk.json:
     "auth_password": "your-password"
   }
 }
-
+```
 
 Create the Trunk:
+```console
 lk sip outbound create outbound-trunk.json
-
+```
 
 Add SIP Trunk ID:
 
@@ -151,11 +162,13 @@ Add SIP Trunk ID:
 
 ## ☎️ Making an Outbound Call
 With the agent running, dispatch a call using the LiveKit CLI:
+```console
+
 lk dispatch create \
   -new-room \
   -agent-name akij-outbound-flight-agent \
   -metadata '+1234567890'
-
+```
 Replace +1234567890 with the target phone number. The agent will:
 
 - Dial the number.
@@ -165,16 +178,19 @@ Replace +1234567890 with the target phone number. The agent will:
 Helpful CLI Commands
 
 List projects:
+```console
 lk project list
-
+```
 
 List SIP outbound trunks:
+```console
 lk sip outbound list
-
+```
 
 List SIP dispatch rules:
+```console
 lk sip dispatch list
-
+```
 
 
 
@@ -193,16 +209,19 @@ Contributions are welcome! To contribute:
 Fork the repository.
 
 Create a feature branch:
+```console
 git checkout -b feature/your-feature
-
+```
 
 Commit changes:
+```console
 git commit -m "Add your feature"
-
+```
 
 Push to the branch:
+```console
 git push origin feature/your-feature
-
+```
 
 Open a pull request.
 
