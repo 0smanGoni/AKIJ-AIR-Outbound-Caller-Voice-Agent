@@ -1,0 +1,13 @@
+__pycache__/
+agents/__pycache__/
+data/__pycache__/
+logs/__pycache__/
+memory/__pycache__/
+tools/__pycache__/
+.venv/
+openapi.yaml
+myenv/
+.env 
+dispatch-rule.json
+inbound-trunk.json
+outbound-trunk.json

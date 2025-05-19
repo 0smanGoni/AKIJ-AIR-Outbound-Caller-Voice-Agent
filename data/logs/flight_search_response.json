@@ -1,0 +1,49 @@
+{
+    "status": "failed",
+    "reason": "Missing departure_airport Required Parameters",
+    "requested_data": {
+        "journey_type": "OneWay",
+        "segment": [
+            {
+                "departure_airport_type": "AIRPORT",
+                "departure_airport": null,
+                "arrival_airport_type": "AIRPORT",
+                "arrival_airport": "LHR",
+                "departure_date": "2025-04-09"
+            }
+        ],
+        "travelers_adult": 1,
+        "travelers_child": 0,
+        "travelers_child_age": [],
+        "travelers_infants": 0,
+        "travelers_infants_age": [],
+        "fare_type": null,
+        "fare_option": null,
+        "content_type": null,
+        "ptc_option": null,
+        "agency_ethnic_list": null,
+        "preferred_carrier": [],
+        "non_stop_flight": "any",
+        "baggage_option": "any",
+        "booking_class": "Economy",
+        "supplier_uid": "F1TT00041",
+        "partner_id": "78",
+        "language": "en",
+        "short_ref": "12121212121",
+        "version": null,
+        "team_profile": [
+            {
+                "member_id": "1",
+                "pax_type": "ADT"
+            },
+            {
+                "member_id": "2",
+                "pax_type": "CNN"
+            },
+            {
+                "member_id": "3",
+                "pax_type": "INF"
+            }
+        ]
+    }
+}

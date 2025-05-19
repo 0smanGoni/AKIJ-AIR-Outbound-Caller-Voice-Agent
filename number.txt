@@ -1,0 +1,4 @@
+lk dispatch create \
+  --new-room \
+  --agent-name akij-outbound-flight-agent \
+  --metadata '+8801628245488'

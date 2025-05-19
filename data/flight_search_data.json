@@ -1,0 +1,10 @@
+{
+    "origin": "Dhaka, Bangladesh",
+    "destination": "London",
+    "date_of_travel": "2025-04-09",
+    "journey_type": "OneWay",
+    "num_adults": 1,
+    "num_children": 0,
+    "flight_type": "international",
+    "return_date": null
+}

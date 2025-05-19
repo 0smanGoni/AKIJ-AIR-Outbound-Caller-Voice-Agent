@@ -1,0 +1,28 @@
+python3.11 -m venv myenv
+myenv\Scripts\activate.bat
+pip install -r requirements.txt
+python agent.py download-files
+python agent.py dev
+
+
+
+
+py -m venv myenv
+myenv\Scripts\activate.bat
+pip install -r requirements.txt
+py agent.py download-files
+py agent.py dev
+
+
+
+
+lk sip outbound create outbound-trunk.json
+
+
+Making a call
+
+
+lk dispatch create \
+  --new-room \
+  --agent-name akij-outbound-flight-agent \
+  --metadata '+8801628245488'
