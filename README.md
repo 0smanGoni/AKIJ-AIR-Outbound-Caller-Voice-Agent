@@ -99,14 +99,14 @@ To enable outbound calls, configure a Twilio SIP trunk and a LiveKit SIP outboun
 - Sign Up: Create a Twilio account.
 - Get a Phone Number: Purchase a Twilio phone number.
 - Create a SIP Trunk:
-- - In the Twilio Console, go to Explore Products > Elastic SIP Trunking > SIP Trunks > Get Started.
-- - Create a SIP trunk, name it, and save.
+  - In the Twilio Console, go to Explore Products > Elastic SIP Trunking > SIP Trunks > Get Started.
+  - Create a SIP trunk, name it, and save.
 
 
 - Configure SIP Termination:
-- - Navigate to Termination.
-- - Enter a Termination SIP URI.
-- - Add a Credentials List with a friendly name, username, and password.
+  - Navigate to Termination.
+  - Enter a Termination SIP URI.
+  - Add a Credentials List with a friendly name, username, and password.
 
 
 
@@ -116,11 +116,11 @@ Prepare the Trunk Configuration:
 
 - Copy outbound-trunk_example.json to outbound-trunk.json.
 - Update outbound-trunk.json with your Twilio credentials:
-- - name: A descriptive name (e.g., "AKIJ AIR Outbound").
-- - address: Your Twilio Termination SIP URI.
-- - numbers: Your Twilio phone number (e.g., "+1234567890").
-- - auth_username: Username from Twilio Credentials List.
-- auth_password: Password from Twilio Credentials List.
+  - name: A descriptive name (e.g., "AKIJ AIR Outbound").
+  - address: Your Twilio Termination SIP URI.
+  - numbers: Your Twilio phone number (e.g., "+1234567890").
+  - auth_username: Username from Twilio Credentials List.
+  auth_password: Password from Twilio Credentials List.
 
 
 - Do not commit outbound-trunk.json to a public repository.
@@ -152,9 +152,9 @@ Add SIP Trunk ID:
 ## ☎️ Making an Outbound Call
 With the agent running, dispatch a call using the LiveKit CLI:
 lk dispatch create \
-  --new-room \
-  --agent-name akij-outbound-flight-agent \
-  --metadata '+1234567890'
+  -new-room \
+  -agent-name akij-outbound-flight-agent \
+  -metadata '+1234567890'
 
 Replace +1234567890 with the target phone number. The agent will:
 
